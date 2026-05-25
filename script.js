@@ -2,7 +2,7 @@
   "use strict";
 
   // ------- Configuration -------
-  const SERVICE_NAME = "Bye Bye Eye Bags";
+  const SERVICE_NAME = "Korean Facial";
   const SERVICE_DURATION_MIN = 60;
 
   // GHL credentials
@@ -15,7 +15,7 @@
     version:    '2021-07-28',
   };
 
-  const BUSINESS_TZ = "America/Los_Angeles";
+  const BUSINESS_TZ = "America/Chicago";
 
   // Build specific time slots
   function buildAllSlots() {
@@ -282,8 +282,8 @@
         lastName: lastName || '-',
         email,
         phone,
-        source: 'Opal MD - Bye Bye Eye Bags',
-        tags: ['Bye Bye Eye Bags'],
+        source: 'Luminous skin tech SA - Korean Facial',
+        tags: ['Korean Facial'],
       });
       const contactId = contactRes.contact?.id || contactRes.id;
 
@@ -296,7 +296,7 @@
         assignedUserId: GHL.userId,
         startTime:      isoInTz(start, BUSINESS_TZ),
         endTime:        isoInTz(end,   BUSINESS_TZ),
-        title:          `${name} — Bye Bye Eye Bags`,
+        title:          `${name} — Korean Facial`,
         selectedTimezone: BUSINESS_TZ,
       });
 
